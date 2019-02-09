@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cf.ibrahimts.criccalcriant.SecondInningsActivity">
+
+    <EditText
+        android:id="@+id/i2etScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:gravity="start|center_vertical"
+        android:hint="@string/score"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/i2x0"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/i2etOver"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="@string/ov"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/i2etCRR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i2etScore" />
+
+    <EditText
+        android:id="@+id/i2etCRR"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/crr"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2etOver"
+        app:layout_constraintEnd_toStartOf="@+id/i2RRR" />
+
+    <TextView
+        android:id="@+id/i2x2"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2TOv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/i2TOv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="@string/totalOv"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/i2x2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i2etOver" />
+
+    <EditText
+        android:id="@+id/i2OvRem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:hint="@string/ovRem"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2x2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i2x2" />
+
+    <TextView
+        android:id="@+id/i2ShowBatting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/showBatting"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i2RunReq" />
+
+    <EditText
+        android:id="@+id/i2BatMan1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/batman1"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/i2btnBatMan1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i2ShowBatting" />
+
+    <Button
+        android:id="@+id/i2btnBatMan1"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/set"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2BatMan1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/i2BatMan2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/batman2"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/i2btnBatMan2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i2BatMan1" />
+
+    <Button
+        android:id="@+id/i2btnBatMan2"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/set"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2BatMan2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/i2BallMan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/bowler"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/i2btnBallMan"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i2ShowBowling" />
+
+    <Button
+        android:id="@+id/i2btnBallMan"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/set"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2BallMan"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/i2ShowBowling"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/bowling"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i2BatMan2" />
+
+    <EditText
+        android:id="@+id/i2etExtraRun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/extreRun"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2x1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i2x1" />
+
+    <Button
+        android:id="@+id/i2btnr0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i2BallMan" />
+
+    <Button
+        android:id="@+id/i2btnr1"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/one"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2btnr0"
+        app:layout_constraintStart_toEndOf="@+id/i2btnr0" />
+
+    <Button
+        android:id="@+id/i2btnr2"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/two"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2btnr1"
+        app:layout_constraintStart_toEndOf="@+id/i2btnr1" />
+
+    <Button
+        android:id="@+id/i2btnr3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/three"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2btnr2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i2btnr2" />
+
+    <Button
+        android:id="@+id/i2btnr6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/six"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2btnwdnb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i2btnwdnb" />
+
+    <Button
+        android:id="@+id/i2btnr4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/four"
+        app:layout_constraintEnd_toStartOf="@+id/i2btnwdnb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i2btnr1" />
+
+    <Button
+        android:id="@+id/i2btnwdnb"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/wdnb"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2btnr4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/i2btnout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/out"
+        app:layout_constraintEnd_toStartOf="@+id/i2btnChS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i2btnr4" />
+
+    <Button
+        android:id="@+id/i2btnrextra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/extrar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2btnChS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i2btnChS" />
+
+    <Button
+        android:id="@+id/i2btnChS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/chS"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2btnout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/i2btnCTC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/cTC"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2btnRedo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i2btnRedo" />
+
+    <Button
+        android:id="@+id/i2btnUndo"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/undo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i2btnout" />
+
+    <TextView
+        android:id="@+id/i2x0"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2etScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/i2etTarget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/targetView"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2x0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toEndOf="@+id/i2x0" />
+
+    <EditText
+        android:id="@+id/i2RRR"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:paddingTop="0dp"
+        android:hint="@string/rrr"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2etCRR"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/i2x1"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2RunReq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/i2RunReq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="@string/runreq"
+        android:paddingTop="0dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/i2x1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i2TOv" />
+
+    <Button
+        android:id="@+id/i2btnRedo"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/redo"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i2btnUndo"
+        app:layout_constraintStart_toEndOf="@+id/i2btnUndo" />
+
+</android.support.constraint.ConstraintLayout>

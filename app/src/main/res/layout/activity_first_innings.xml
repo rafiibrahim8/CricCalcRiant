@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cf.ibrahimts.criccalcriant.SecondInningsActivity">
+
+    <EditText
+        android:id="@+id/i1etScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:gravity="start|center_vertical"
+        android:hint="@string/score"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/i1x1"
+        android:layout_width="5dp"
+        android:layout_height="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1etOver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/i1etOver"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="@string/ov"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/i1x1"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1etScore" />
+
+    <EditText
+        android:id="@+id/i1etCRR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:hint="@string/crr"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1x1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i1x1" />
+
+    <TextView
+        android:id="@+id/i1x2"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1TOv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/i1TOv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="@string/totalOv"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/i1x2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1etOver" />
+
+    <EditText
+        android:id="@+id/i1OvRem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:hint="@string/ovRem"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1x2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i1x2" />
+
+    <TextView
+        android:id="@+id/i1ShowBatting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/showBatting"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1etExtraRun" />
+
+    <EditText
+        android:id="@+id/i1etBatMan1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/batman1"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/i1btnBatMan1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1ShowBatting" />
+
+    <Button
+        android:id="@+id/i1btnBatMan1"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/set"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1etBatMan1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/i1etBatMan2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/batman2"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/i1btnBatMan2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1etBatMan1" />
+
+    <Button
+        android:id="@+id/i1btnBatMan2"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/set"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1etBatMan2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/i1BallMan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/bowler"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/i1btnBallMan"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1ShowBowling" />
+
+    <Button
+        android:id="@+id/i1btnBallMan"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/set"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1BallMan"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/i1ShowBowling"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/bowling"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1etBatMan2" />
+
+    <EditText
+        android:id="@+id/i1etExtraRun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="@string/extreRun"
+        android:inputType="textPersonName"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1TOv" />
+
+    <Button
+        android:id="@+id/i1btnr0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/zero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1BallMan" />
+
+    <Button
+        android:id="@+id/i1btnr1"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/one"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1btnr0"
+        app:layout_constraintStart_toEndOf="@+id/i1btnr0" />
+
+    <Button
+        android:id="@+id/i1btnr2"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/two"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1btnr1"
+        app:layout_constraintStart_toEndOf="@+id/i1btnr1" />
+
+    <Button
+        android:id="@+id/i1btnr3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/three"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1btnr2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i1btnr2" />
+
+    <Button
+        android:id="@+id/i1btnr6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/six"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1btnwdnb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i1btnwdnb" />
+
+    <Button
+        android:id="@+id/i1btnr4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/four"
+        app:layout_constraintEnd_toStartOf="@+id/i1btnwdnb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1btnr1" />
+
+    <Button
+        android:id="@+id/i1btnwdnb"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/wdnb"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1btnr4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/i1btnout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/out"
+        app:layout_constraintEnd_toStartOf="@+id/i1btnChS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1btnr4" />
+
+    <Button
+        android:id="@+id/i1btnrextra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/extrar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1btnChS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i1btnChS" />
+
+    <Button
+        android:id="@+id/i1btnChS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/chS"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1btnout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/i1btnCTC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/cTC"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1btnRedo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i1btnRedo" />
+
+    <Button
+        android:id="@+id/i1btnUndo"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/undo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1btnout" />
+
+    <Button
+        android:id="@+id/i1btnRedo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/redo"
+        app:layout_constraintBaseline_toBaselineOf="@+id/i1btnUndo"
+        app:layout_constraintStart_toEndOf="@+id/i1btnUndo" />
+
+</android.support.constraint.ConstraintLayout>
